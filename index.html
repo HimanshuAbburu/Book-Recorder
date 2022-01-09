@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="disp0lay-4 text-center"> Book List App</h1>
+
+        <form autocomplete="off" id="book-form">
+            <div class="div form-group">
+                <input type="text" class="form-control" id="title" placeholder="Title">
+            </div>
+            <div class="div form-group">
+                <input type="text" class="form-control" id="author" placeholder="Author">
+            </div>
+            <div class="div form-group">
+                <input type="text" class="form-control" id="isbn" placeholder="#ISBN">
+            </div>
+            <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <td>Title</td>
+                    <td>Author</td>
+                    <td>#ISBN</td>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
